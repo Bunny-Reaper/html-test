@@ -5,8 +5,7 @@ html{
                 #82d3f9 0%,
                 #3b9fd8 40%,
                 #f1f9fe 60%,
-                #69c057 80%,
-                #c84f42 100%
+                #69c057 100%
               );
   min-height: 100vh;
   margin: 0;
@@ -19,17 +18,30 @@ h1 {
     text-shadow:
     0 0 5px rgba(255, 255, 255, 0.6),
     0 0 10px rgba(232, 252, 215, 0.5); /* Matches sunlight from image */
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.3); /* Soft glow for readability */
+    text-shadow: 2px 2px 8px rgba(245, 247, 141, 0.836); /* Soft glow for readability */
     text-align: center;
     margin-top: 1rem;
     letter-spacing: 1px;
-    background: rgba(0, 0, 0, 0.1); /* or a soft blur backdrop */
+    background: rgba(255, 255, 255, 0.267); /* or a soft blur backdrop */
     padding: 2rem;
-    max-width: 800px;
+    max-width: auto;
     font-size: 3rem;
     text-align: center;
     margin-bottom: 0;
+    animation: fadeSlideInFromTop 1.2s ease-out both;
+
 }
+@keyframes fadeSlideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Slide in from above */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 .nav-ribbon {
   display: flex;
