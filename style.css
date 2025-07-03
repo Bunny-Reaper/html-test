@@ -1,0 +1,60 @@
+html{
+    background: radial-gradient(circle at 20% 10%, #e8fcd7 0%, transparent 40%),
+              linear-gradient(
+                to bottom,
+                #82d3f9 0%,
+                #3b9fd8 40%,
+                #f1f9fe 60%,
+                #69c057 80%,
+                #c84f42 100%
+              );
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    font-size: 3rem;                  /* Large and readable */
+    color: #ffffff;
+    text-shadow:
+    0 0 5px rgba(255, 255, 255, 0.6),
+    0 0 10px rgba(232, 252, 215, 0.5); /* Matches sunlight from image */
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3); /* Soft glow for readability */
+    text-align: center;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.1); /* or a soft blur backdrop */
+    padding: 2rem;
+    max-width: 800px;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.nav-ribbon {
+  display: flex;
+  background-color: #3ca6e428; /* Ribbon background color */
+  padding: 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 0 ;
+}
+
+.nav-ribbon h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  flex: 1; /* Equal width for both links */
+  text-align: center;
+}
+
+.nav-ribbon h2 a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.nav-ribbon h2 a:hover {
+  background-color: #e7e7e73a; /* Slightly darker blue on hover */
+}
