@@ -1,72 +1,88 @@
-html{
-    background: radial-gradient(circle at 20% 10%, #e8fcd7 0%, transparent 40%),
-              linear-gradient(
-                to bottom,
-                #82d3f9 0%,
-                #3b9fd8 40%,
-                #f1f9fe 60%,
-                #69c057 100%
-              );
+html {
+  background:
+    linear-gradient(to bottom, rgba(248, 241, 228, 0.5), rgba(228, 216, 196, 0.9)),
+    url('./Assets/textures/fabric-plaid.png');
+  background-repeat: repeat;
+  background-blend-mode: lighten;
   min-height: 100vh;
   margin: 0;
+  font-family: 'EB Garamond', serif;
+  color: #553f3f;
 }
+
 
 h1 {
-    font-family: 'Segoe UI', Roboto, sans-serif;
-    font-size: 3rem;                  /* Large and readable */
-    color: #ffffff;
-    text-shadow:
-    0 0 5px rgba(255, 255, 255, 0.6),
-    0 0 10px rgba(232, 252, 215, 0.5); /* Matches sunlight from image */
-    text-shadow: 2px 2px 8px rgba(245, 247, 141, 0.836); /* Soft glow for readability */
-    text-align: center;
-    margin-top: 1rem;
-    letter-spacing: 1px;
-    background: rgba(255, 255, 255, 0.267); /* or a soft blur backdrop */
-    padding: 2rem;
-    max-width: auto;
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 0;
-    animation: fadeSlideInFromTop 1.2s ease-out both;
-
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #5a3e2b;
+  text-shadow: 1px 1px 0 #f5f0e6;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 2px solid #c8b79d;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.6);
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
 }
-@keyframes fadeSlideInFromTop {
-  from {
-    opacity: 0;
-    transform: translateY(-20px); /* Slide in from above */
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 
 .nav-ribbon {
   display: flex;
-  background-color: #3ca6e428; /* Ribbon background color */
-  padding: 0;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  margin: 0 ;
+  justify-content: center;
+  gap: 1rem;
+  background-color: rgba(210, 190, 160, 0.4);
+  border: 1px solid #c0a97d;
+  padding: 0.5rem;
+  margin: 2rem auto;
+  margin-top: 5px;
+  max-width: 600px;
+  border-radius: 6px;
 }
 
-.nav-ribbon h2 {
-  margin: 0;
-  font-size: 1.2rem;
-  flex: 1; /* Equal width for both links */
-  text-align: center;
-}
-
-.nav-ribbon h2 a {
-  display: block;
-  padding: 0.75rem 1rem;
-  color: white;
+.nav-ribbon a {
+  color: #4a3728;
+  font-weight: bold;
   text-decoration: none;
-  transition: background-color 0.3s;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
-.nav-ribbon h2 a:hover {
-  background-color: #e7e7e73a; /* Slightly darker blue on hover */
+.nav-ribbon a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: #a2835b;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+}
+
+
+p {
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #3e2c1e;
+}
+
+form {
+    background-color: rgba(210, 190, 160, 0.4);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #c0a97d;
+    width: 30rem;
+    box-shadow: 0 1px 20px #3e2c1e;
+    justify-content: center;
+    align-items: center;
 }

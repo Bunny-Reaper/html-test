@@ -1,26 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" class="sk-pattern">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link 
-        rel="stylesheet"
-        href="./style.css"
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap"
+      rel="stylesheet"
     />
-</head>
-<body>
-    <h1>Page 2</h1>
-    <nav class="nav-ribbon">
-        <h2><a href="./index.html">Main Page</a></h2>
-        <h2><a href="./page1.html">Page 1</a></h2>
-    </nav>
-    
-    <hr/>
-    <img src="https://picsum.photos/400/300" alt="Placeholder image from Picsum">
-    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
-        Consectetur adipiscing elit quisque faucibus ex sapien vitae. 
-        Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. 
-        Pretium tellus duis convallis tempus leo eu aenean.</p>
-</body>
+
+    <link rel="stylesheet" href="./style2.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-block">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 2v2m1 4.129A4 4 0 0 1 15.873 11M19 5l-1.256 1.256M20 12h2M9 8a5 5 0 1 0 7 7a7 7 0 1 1-7-7"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <g
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+            />
+          </g>
+        </svg>
+      </div>
+      <h1>Page 2</h1>
+      <nav class="nav-ribbon">
+        <ul>
+          <li><a href="./index.html">Main Page</a></li>
+          <li><a href="./page1.html">Page 1</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="contact-us">
+        <h2>Contact Us</h2>
+        
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Lorem Ipsum"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="lorem@ipsum.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Lorem ipsum dolor sit amet..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">Send</button>
+        </form>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
