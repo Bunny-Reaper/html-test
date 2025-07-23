@@ -1,0 +1,72 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'EB Garamond', serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* HEADER STYLING */
+header {
+  background-color: #8f8f8f;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 15px;
+}
+
+.logo-title h1 {
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+}
+
+/* NAVIGATION STYLING */
+.nav-ribbon ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-ribbon a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-ribbon a:hover {
+  color: #a435f0; /* Udemy-style purple */
+}
+
+/* Responsive adjustments */
+@media (max-width: 200px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-ribbon ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+

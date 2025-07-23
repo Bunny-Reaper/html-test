@@ -4,18 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 1</title>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" /> 
   </head>
   <body>
+    <header>
+    <div class="logo-title">
+    <img src="./Assets/logo.png" alt="Book Club Logo" class="logo" />
     <h1>Page 1</h1>
+  </div>
     <nav class="nav-ribbon">
-      <h2><a href="./index.html">Main Page</a></h2>
-      <h2><a href="./page2.html">Page 2</a></h2>
+      <ul>
+        <li><a href="./index.html">Main Page</a></li>
+        <li><a href="./page1.html">Page 1</a></li>
+        <li><a href="./page2.html">Page 2</a></li>
+      </ul>
     </nav>
+    </header>
     <hr />
-    <img src="Assets/test image.png" alt="Placeholder image"/>
-    <p>Lorem ipsum dolor sit amet.</p>
+    <script>
+      const csvData = `Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+      Weights,Run,Weights,Run,Weights,Run,None
+      Kitchen,Bottom Room,Bottom Bathrooms,Top Room,Study,Living Room,Rest
+      Program,Power Apps,Program,Power Apps,Program,Rest,Rest`;
+      // Parse it
+      const rows = csvData
+        .trim()
+        .split("\n")
+        .map((row) => row.split(","));
+      // Generate checkboxes
+      document.addEventListener("DOMContentLoaded", () => {
+        const table = document.createElement("table");
+        rows.forEach((row, rowIndex) => {
+          const tr = document.createElement("tr");
+          row.forEach((cell) => {
+            const td = document.createElement("td");
+            if (rowIndex === 0) {
+              td.innerHTML = `<strong>${cell}</strong>`;
+            } else {
+              td.innerHTML = `<label><input type="checkbox" /> ${cell}</label>`;
+            }
+            tr.appendChild(td);
+          });
+          table.appendChild(tr);
+        });
+        document.body.appendChild(table);
+      });
+    </script>
   </body>
 </html>
